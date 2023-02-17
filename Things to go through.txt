@@ -1,0 +1,17 @@
+FOR HTML:-
+div,section,p,span,label,input[text,checkbox,radio],select,ul,ol,li,img,
+
+FOR CSS:-
+display: inline-block,block,flex,none
+border
+padding,margin
+box-shadow
+*
+how to import font-family,size,
+display: flex,
+flex-direction,align-items,justify-contnet,flex
+background - color,image,position,size,
+media
+position: relative,asolute,sticky
+overflow
+left,right,top,bottom
