@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<title>button tag</title>
+<head>button tag</head>
+<body>
+<br>
+<button type="button">Click Me!</button>
+<hr>
+<h1><b>Attributes</b></h1>
+<ol>
+        <li>Autofocus</li>
+        <li>disabled</li>
+	<li>form</li>
+	<li>formaction</li>
+	<li>formenctype</li>
+	<li>formmethod</li>
+	<li>formnovalidate</li>
+	<li>formtarget</li>
+	<li>name</li>
+	<li>type</li>
+	<li>value</li>
+</ol>
+<hr>
+
+<p>1.Autofocus</p>
+<button type="button" autofocus>Click Me!</button>
+<!--Definition and Usage
+The autofocus attribute is a boolean attribute.
+When present, it specifies that a button should automatically get focus when the page loads. -->
+
+<br>
+
+<p>2.disabled</p>
+<button type="button" disabled>Click Me!</button>
+<!--Definition and Usage
+The disabled attribute is a boolean attribute.
+
+When present, it specifies that the button should be disabled.
+
+A disabled button is unusable and un-clickable.
+
+The disabled attribute can be set to keep a user from clicking on the button until some other condition has been met (like selecting a checkbox, etc.). Then, a JavaScript could remove the disabled value, and make the button clickable again. -->
+
+
+
+<br>
+
+<p>3.form</p>
+<form action="/action_page.php" method="get" id="form1">
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname">
+</form>
+
+<button type="submit" form="form1" value="Submit">Submit</button>
+<!--Definition and Usage
+The form attribute specifies the form the button belongs to.
+
+The value of this attribute must be equal to the id attribute of a <form> element in the same document. -->
+
+<br>
+
+<p>4.formaction</p>
+<form action="/action_page.php" method="get">
+	<label for ="fname">First name:</label>
+	<input type="text" id="fname" name="fname"><br><br>
+	<label for="lname">Last name:</label>
+	<input type="text" id="lname" name="lname"><br><br>
+	<button type="submit">Submit</button>
+	<button type="submit" formaction="/action_page2.php">Submit to another page </button>
+</form>
+
+<!--Definition and Usage
+The formaction attribute specifies where to send the form-data when a form is submitted. This attribute overrides the form's action attribute.
+
+The formaction attribute is only used for buttons with type="submit". -->
+
+
+<p>5.formenctype</p>
+<form action="/action_page_binary.asp" method="post">
+	<label for="fname">First name:</label>
+	<input type="text" id="fname" name="fname" value="Jack"><br><br>
+	<button type="submit">Submit with character encoding </button>
+	<button type="submit" formenctype="text/plain">Submit without character encoding </button>
+</form>
+
+<!--Definition and Usage
+The formenctype attribute specifies how form-data should be encoded before sending it to a server. This attribute overrides the form's enctype attribute.
+The formenctype attribute is only used for buttons with type="submit".	-->
+
+<p>6.formmethod</p>
+<form action="/action_page.php" method="get">
+ <label for="fname">First name:</label>
+ <input type="text" id="fname" name="fname"><br><br>
+ <label for="lname">Last name:</label>
+ <input type="text" id="lname" name="lname"><br><br>
+ <button type="submit">Submit</button>
+ <button type="submit" formmethod="post">Submit using POST</button>
+</form>
+
+<!--Definition and Usage
+The formmethod attribute specifies which HTTP method to use when sending the form-data. This attribute overrides the form's method attribute.
+
+The formmethod attribute is only used for buttons with type="submit".
+
+The form-data can be sent as URL variables (with method="get") or as HTTP post (with method="post").
+
+Notes on the "get" method:
+
+it appends the form-data to the URL in name/value pairs
+it is useful for form submissions where a user want to bookmark the result
+There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure that all of the form-data will be correctly transferred
+Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)
+Notes on the "post" method:
+
+it sends the form-data as an HTTP post transaction
+Form submissions with the "post" method cannot be bookmarked
+it is more robust and secure than "get"
+it does not have size limitations -->
+
+<p>7.Formnovalidate</p>
+<form action="/action_page.php" method="get">
+ <label for="email">Enter your email:</label>
+ <input type="email" id="email" name="email"><br><br>
+ <button type="submit">Submit</button>
+ <button type="submit" formnovalidate>Submit without validation</button>
+</form>
+
+<p>8.formtarget</p>
+<form action="/action_page.php" method="get">
+ <label for="fname">First name:</label>
+ <input type="text" id="fname" name="fname"><br><br>
+ <label for="lname">Last name:</label>
+ <input type="text" id="lname" name="lname"><br><br>
+ <button type="submit">Submit</button>
+ <button type="submit" formtarget="_blank">Submit to a new window</button>
+</form>
+
+<p>9.name</p>
+<form atcion="/action_page.php" method="get">
+ Choose your favorite subject:
+ <button name="subject" type="submit" value="HTML">HTML</button>
+ <button name="subject" type="submit" value="CSS">CSS</button>
+</form>
+
+<p>10.type</p>
+<form action="/action_page.php" method="get">
+ <label for="fname">First name</label>
+ <input type="text" id="fname" name="fname"><br><br>
+ <label for="lname">Last name</label>
+ <input type="text" id="lname" name="lname"><br><br>
+ <button type="submit" value="Submit">Submit</button>
+ <button type="reset" value="Reset">Reset</button>
+</form>
+
+<p>11.value</p>
+<form action="/action_page.php" method="get">
+ Choose your favorite subject:
+ <button type="subject" type="submit" value="fav_HTML">HTML</button>
+ <button name="subject" type="submit" value="fav-CSS">CSS</button>
+</form>
+
+
+
+
+
+</body>
+</html>

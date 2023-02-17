@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>'a' tag & Other Attributes</title>
+<head><p align="Center"><b>'a' tag & Other Attributes</b></p></head>
+<body>
+<br>
+<br>
+<a href="https://www.w3schools.com">Visit W3schools.com!</a>
+<br>
+<a href="https://www.google.com">Visit Google.com</a>
+<br>
+<hr>
+<p>The List of Attributes are:-</p>
+<ol>
+        <li>download</li>
+        <li>href</li>
+	<li>hreflang</li>
+	<li>media</li>
+	<li>ping</li>
+	<li>referrerpolicy</li>
+	<li>rel</li>
+	<li>target</li>
+	<li>type</li>
+</ol>
+<hr>
+<p>1.Download</p>
+<p>Click on the image to download it:</p>
+
+<a href="C:\Users\Interns\Desktop\Intern Files\HTML Files\Pictures\myw3schoolsimage.jpg" download>
+   <img src="C:\Users\Interns\Desktop\Intern Files\HTML Files\Pictures\myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">
+</a>
+
+<p><b>Note:</b> The download attribute is not supported in IE or Edge (prior version 18), or in Safari (prior version 10.1).</p>
+
+<br>
+<hr>
+<p>2.href</p>
+
+<h1>The a href attribute</h1>
+
+<p>An absolute URL: <a href="https://www.w3schools.com">W3Schools</a></p>
+<p>A relative URL: <a href="tag_a.asp">The a tag</a></p>
+
+<hr>
+<!--Definition and Usage
+The href attribute specifies the URL of the page the link goes to.
+
+If the href attribute is not present, the <a> tag will not be a hyperlink.
+
+Tip: You can use href="#top" or href="#" to link to the top of the current page!
+
+-->
+
+<p>3.hreflang</p>
+<p>
+An image as a link: <a href="https://www.w3schools.com">
+<img border="0" alt="W3Schools" src="C:\Users\Interns\Desktop\Intern Files\HTML Files\Pictures\myw3schoolsimage.jpg" width="100" height="100">
+</a>
+</p>
+
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+<p><a href="mailto:someone@example.com">Send email</a></p>
+<br>
+<a href="tel:+4733378901">+47 333 78 901</a>
+<br>
+
+<a href="#Section2">Go to Section 2</a>
+<p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+<p>"Whenever you feel like criticizing any one," he told me, "just remember that all the people in this world haven't had the advantages that you've had."</p>
+
+<h2 id="section2">Section 2</h2>
+<p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+<p>"Whenever you feel like criticizing any one," he told me, "just remember that all the people in this world haven't had the advantages that you've had."</p>
+
+<br>
+<a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+
+<br>
+<hr>
+
+<p>4.media</p>
+<h1>The a media attribute</h1>
+<p>
+<a href="att_a_media.asp?output=print" media="print and (resolution:300dpi)">Open media attribute page for print.</a>
+</p>
+
+<br>
+<hr>
+
+<p>5.ping</p>
+<a href="https://www.w3schools.com/html" ping="https://www.w3schools.com/trackpings"> 
+<p>The ping attribute specifies a list of URLs to be notified if the user follows the hyperlink.</p>
+</a>
+<!--Definition and Usage
+The ping attribute specifies a list of URLs to be notified if the user follows the hyperlink.
+
+When the user clicks on the hyperlink, the ping attribute will send a short HTTP POST request to the specified URL.
+
+This attribute is useful for monitoring/tracking.
+
+-->
+
+<br>
+<hr>
+
+<p>6.referrerpolicy</p>
+<a href="https://www.w3schools.com" reffererpolicy="origin">
+<p>The referrerpolicy attribute specifies which referrer information to send when the user clicks on the hyperlink.</p>
+</a>
+
+<!--Definition and Usage
+The referrerpolicy attribute specifies which referrer information to send when the user clicks on the hyperlink. -->
+
+
+<br>
+<hr>
+
+<p>7.rel</p>
+<a ref="nofollow" href="http://www.functravel.com/">Cheap Flights</a>
+<!--Definition and Usage
+The rel attribute specifies the relationship between the current document and the linked document.
+Only used if the href attribute is present. -->
+
+<br>
+<hr>
+
+<p>8.target</p>
+<h1>The a target attribute</h1>
+<p>Open link in a new window or tab:
+<a href="https://www.w3schools.com" target="_blank">Visit W3school</a>
+</p>
+
+<br>
+<hr>
+<p>9.Type</p>
+<a href="https://www.w3schools.com" type="text/html">W3Schools</a>
+
+
+
+</body>
+</html>
